@@ -1,12 +1,11 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "0e8a24e8858d5f2bdc9d6490c2155683"
-name = "Admin UI extension"
+name = "Product Admin Action"
 application_url = "https://example.com"
 embedded = true
 
 [build]
-include_config_on_deploy = true
 automatically_update_urls_on_dev = true
 
 [webhooks]
@@ -18,7 +17,7 @@ embedded_app_direct_api_access = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = ""
+scopes = "read_products,write_products"
 optional_scopes = [ ]
 use_legacy_install_flow = false
 
